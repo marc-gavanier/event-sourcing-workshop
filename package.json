@@ -1,0 +1,30 @@
+{
+  "name": "event-sourcing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ./src/apps/cli/index.ts",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint:code:fix": "pnpm exec biome check --write",
+    "lint:code:ci": "pnpm exec biome ci",
+    "lint:commit": "commitlint --from origin/main",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Marc Gavanier",
+  "license": "MIT",
+  "packageManager": "pnpm@10.18.2",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.6",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@types/node": "^24.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
+    "tsx": "^4.20.6",
+    "vitest": "^3.2.4"
+  }
+}
