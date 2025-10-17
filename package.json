@@ -26,5 +26,8 @@
     "lint-staged": "^16.2.4",
     "tsx": "^4.20.6",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "ts-pattern": "^5.8.0"
   }
 }
